@@ -2,39 +2,39 @@ import './styles/main.css'
 import logo from './assets/logo.png'
 
 function App() {
-  return <div className='max-w-7xl mx-auto flex flex-col items-center m-10 p-10'>
-    <img src={logo} alt="" />
+  return <div className='max-w-7xl max-h-screen mx-auto flex flex-col gap-8 items-center p-10'>
+    <img src={logo} alt="" className='h-32' />
 
-    <h1 className='text-6xl text-white font-black mt-20'>
+    <h1 className='text-5xl text-white font-black'>
       Seu <span className='bg-gradient bg-clip-text text-transparent'>duo</span> está aqui.
     </h1>
 
-    <div className='grid grid-cols-6 gap-3 mt-16'>
+    <div className='grid grid-cols-6 gap-3 shrink'>
       <a href="" className='relative rounded-md overflow-hidden'>
-        <div className='w-full h-1/2 absolute bottom-0 left-0 bg-overlay p-2 pt-8'>
-          <h3 className='font-bold text-white text-[.7rem] tracking-tighter mb-[-8px]'>League of Legends</h3>
-          <span className='text-zinc-300 text-[.6rem]'>4 anúncios</span>
+        <div className='w-full h-1/2 absolute bottom-0 bg-overlay p-2 pt-[4vw]'>
+          <h3 className='font-bold text-white text-[1.5vw] tracking-tighter mb-[-4px]'>League of Legends</h3>
+          <span className='text-zinc-300 text-[1vw]'>4 anúncios</span>
         </div>
-        <img src="/image 1.png" alt="" />
+        <img src="/image 1.png" alt="" className='h-full' />
       </a>
-      <a href="">
-        <img src="/image 2.png" alt="" />
+      <a href="" className='relative rounded-md overflow-hidden h-full'>
+        <img src="/image 2.png" alt="" className='h-full' />
       </a>
-      <a href="">
-        <img src="/image 3.png" alt="" />
+      <a href="" className='relative rounded-md overflow-hidden h-full'>
+        <img src="/image 3.png" alt="" className='h-full' />
       </a>
-      <a href="">
-        <img src="/image 5.png" alt="" />
+      <a href="" className='relative rounded-md overflow-hidden h-full'>
+        <img src="/image 5.png" alt="" className='h-full' />
       </a>
-      <a href="">
-        <img src="/image 6.png" alt="" />
+      <a href="" className='relative rounded-md overflow-hidden h-full'>
+        <img src="/image 6.png" alt="" className='h-full' />
       </a>
-      <a href="">
-        <img src="/image 7.png" alt="" />
+      <a href="" className='relative rounded-md overflow-hidden h-full'>
+        <img src="/image 7.png" alt="" className='h-full' />
       </a>
     </div>
 
-    <div className=' bg-gradient w-full mt-8 pt-1 rounded-lg overflow-hidden'>
+    <div className=' bg-gradient w-full pt-1 rounded-lg overflow-hidden shrink-0'>
       <div className='rounded-t bg-zinc-800 px-6 py-4 w-full flex justify-between items-center'>
         <div>
           <h2 className='text-white font-bold'>Não encontrou seu duo?</h2>
